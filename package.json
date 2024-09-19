@@ -22,7 +22,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://{saikiranSpotlet}.github.io/{my-seo-app}",
+  "homepage": "https://saikiranSpotlet.github.io/my-seo-app",
   "eslintConfig": {
     "extends": [
       "react-app",
