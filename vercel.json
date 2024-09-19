@@ -1,13 +1,14 @@
 {
-    "build": {
-      "env": {
-        "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD": "true",
-        "PUPPETEER_EXECUTABLE_PATH": "/usr/bin/google-chrome-stable"
+    "version": 2,
+    "builds": [
+      {
+        "src": "api/**/*.js",
+        "use": "@vercel/node"
       }
-    },
+    ],
     "functions": {
-      "api/*": {
-        "runtime": "nodejs16.x"
+      "api/**/*.js": {
+        "runtime": "nodejs18.x"
       }
     }
   }
